@@ -1,1 +1,3 @@
-# Time to learn Webpack…\nSelf-education excercise, innit fam
+# Time to learn Webpack…
+
+Self-education excercise, innit fam
