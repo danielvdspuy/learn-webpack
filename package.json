@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/danielvdspuy/learn-webpack#readme",
   "devDependencies": {
+    "css-loader": "^0.26.1",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.0",
+    "style-loader": "^0.13.1",
     "webpack": "^2.2.1"
   },
   "dependencies": {
