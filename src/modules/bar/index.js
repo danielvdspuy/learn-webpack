@@ -1,4 +1,4 @@
 import $ from 'jquery';
-import './index.scss';
+import './style';
 
-$('h1').html("This is a stick up, give me all your codes");
+$('.bar').html("This is a stick up, give me all your codes");

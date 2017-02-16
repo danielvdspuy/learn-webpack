@@ -1,0 +1,10 @@
+@import '../../base/sass/colours.scss';
+@import './partial';
+
+.bar {
+  margin: 1em 0;
+  padding: 1em;
+  color: $color-error;
+  background-color: transparentize($color-error,.9);
+  text-transform: uppercase;
+}

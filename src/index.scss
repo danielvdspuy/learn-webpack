@@ -1,6 +1,10 @@
-p {
-  border-radius: 2px;
-  padding: 1em;
-  color: #ffffff;
-  background-color: #ff0000;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 3em;
+  font-family: menlo, monospace, sans-serif;
+  line-height: 150%;
 }

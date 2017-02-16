@@ -1,3 +1,4 @@
 import $ from 'jquery';
+import './style';
 
-$('p').html("I got a bad feeling about that heading…");
+$('.foo').html("I got a bad feeling bar…");
