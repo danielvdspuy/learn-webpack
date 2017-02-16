@@ -4,21 +4,21 @@ Self-education excercise, innit fam
 
 ## Take it for a spin
 
-#### Install prerequisites
+### Install prerequisites
 - [Node.js](https://nodejs.org/en/download/)
 - `npm install -g webpack`
 - [LiveReload browser extension – *optional*](http://livereload.com/extensions/)
 
-#### Clone repository
+### Clone repository
 ```bash
 git clone https://github.com/danielvdspuy/learn-webpack.git
 ```
-#### Install dependencies
+### Install dependencies
 ```bash
 cd learn-webpack
 npm install
 ```
-#### Run desired build script
+### Run desired build script
 ```bash
 # Cleans dist folder
 npm run clean
