@@ -1,6 +1,7 @@
 var path = require('path');
 
-var LiveReloadPlugin = require('webpack-livereload-plugin');
+// var LiveReloadPlugin = require('webpack-livereload-plugin');
+var WatchLiveReloadPlugin = require('webpack-watch-livereload-plugin');
 
 module.exports = {
   entry: {
@@ -15,7 +16,8 @@ module.exports = {
   context: __dirname + "/src",
 
   resolve: {
-    mainFiles: ["index"]
+    mainFiles: ["index"],
+    extensions: [".js", ".json", ".scss"]
   },
 
   module: {
@@ -38,6 +40,13 @@ module.exports = {
   devtool: "inline-sourcemap",
 
   plugins: [
-    new LiveReloadPlugin()
+    // new LiveReloadPlugin(),
+    new WatchLiveReloadPlugin({
+      files: [
+        './**/*.html',
+        './**/*.scss',
+        './**/*.js'
+      ]
+    })
   ]
 };
