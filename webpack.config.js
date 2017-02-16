@@ -1,4 +1,3 @@
-var debug = process.env.NODE_ENV !== "production";
 var path = require('path');
 
 var LiveReloadPlugin = require('webpack-livereload-plugin');
@@ -10,7 +9,7 @@ module.exports = {
 
   output: {
     path: __dirname + "/dist",
-    filename: "bundle.min.js"
+    filename: "bundle.js"
   },
 
   context: __dirname + "/src",
@@ -36,13 +35,9 @@ module.exports = {
     ]
   },
 
-  devtool: debug ? "inline-sourcemap" : null,
+  devtool: "inline-sourcemap",
 
-  plugins: debug ? [
+  plugins: [
     new LiveReloadPlugin()
-  ] : [
-    new webpack.optimize.DedupePlugin(),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false })
   ]
 };
