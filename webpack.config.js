@@ -1,5 +1,6 @@
 var debug = process.env.NODE_ENV !== "production";
-var webpack = require('webpack');
+
+var LiveReloadPlugin = require('webpack-livereload-plugin');
 
 module.exports = {
   entry: {
@@ -36,7 +37,9 @@ module.exports = {
 
   devtool: debug ? "inline-sourcemap" : null,
 
-  plugins: debug ? [ ] : [
+  plugins: debug ? [
+    new LiveReloadPlugin()
+  ] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false })
